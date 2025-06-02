@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35931.197 d17.13
+VisualStudioVersion = 17.13.35931.197
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceOrderAPI.UI", "ECommerceOrderAPI.UI\ECommerceOrderAPI.UI.csproj", "{0FFF2CAC-5DBC-498F-96F0-5ED2403256A3}"
 EndProject
@@ -10,6 +10,13 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceOrderAPI.Application", "ECommerceOrderAPI.Application\ECommerceOrderAPI.Application.csproj", "{6E2D58ED-3DBF-449B-8EF1-25BBB3D79E63}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ECommerceOrderAPI.Infrastructure", "ECommerceOrderAPI.Infrastructure\ECommerceOrderAPI.Infrastructure.csproj", "{7E28EFED-ECCC-48CA-8F33-4CBA6DDF607A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{1FD4D1C3-462D-4067-8770-29360D08AD9B}"
+	ProjectSection(SolutionItems) = preProject
+		deploy.yml = deploy.yml
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,6 +43,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1FD4D1C3-462D-4067-8770-29360D08AD9B} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3AFA47B7-290C-4066-9E8C-C7208C872B66}
