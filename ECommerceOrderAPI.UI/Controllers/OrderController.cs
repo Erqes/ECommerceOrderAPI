@@ -6,7 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ECommerceOrderAPI.UI.Controllers
 {
-    [Route("Order")]
+    [Route("api/order")]
+    [ApiController]
     public class OrderController(IMediator mediator) : ControllerBase
     {
         [HttpPost]
