@@ -25,9 +25,6 @@ namespace ECommerceOrderAPI.Infrastructure
 
                 config.AddOpenBehavior(typeof(ValidationBehavior<,>));
             });
-
-            services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-            services.AddValidatorsFromAssembly(typeof(CreateProductCommandValidaton).Assembly);
             services.AddValidatorsFromAssembly(typeof(CreateOrderCommandValidation).Assembly);
             return services;
         }
