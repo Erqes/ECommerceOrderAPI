@@ -24,7 +24,6 @@ app.UseSwaggerUI(c =>
 
 
 app.UseRouting();
-app.UseAuthorization();
 app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.MapControllers();
 
