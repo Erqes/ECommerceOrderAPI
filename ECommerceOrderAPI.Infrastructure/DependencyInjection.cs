@@ -17,7 +17,7 @@ namespace ECommerceOrderAPI.Infrastructure
         public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddDbContext<ECommerceDbContext>(option =>
-                option.UseSqlServer(configuration.GetConnectionString("Database")));
+                option.UseNpgsql(configuration.GetConnectionString("Database")));
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<IOrderRepository, OrderRepository>();
             services.AddScoped<IProductOrderRepository, ProductOrderRepository>();
